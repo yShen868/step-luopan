@@ -182,5 +182,5 @@ console.log(generateWeeklyRandom());
 console.log(generateWeeklyRandom());
 console.log(generateWeeklyRandom());
 console.log('----------------------')
-submitData('1096168060@qq.com', 'yuelaizheng123', 380, "https://bs.yanwan.store/run4/mi20241029.php");
+submitData('1096168060@qq.com', 'yuelaizheng123', 390, "https://bs.yanwan.store/run4/mi20241029.php");
 // submitData('1096168060@qq.com', 'yuelaizheng123', generateWeeklyRandom(), "https://bs.yanwan.store/run4/mi20241029.php");

@@ -1,11 +1,16 @@
 name: 修改微信步数
 
+#on:
+#  workflow_dispatch:
+#  schedule:
+##    - cron: '0 12 * * *'
+#    - cron: '32 8 * * *'
+
 on:
   workflow_dispatch:
   schedule:
-#    - cron: '0 12 * * *'
-    - cron: '32 8 * * *'
-
+    # 每5分钟（GitHub最小间隔）
+    - cron: "*/5 * * * *"
 jobs:
   ChangBuShu:
     runs-on: ubuntu-latest

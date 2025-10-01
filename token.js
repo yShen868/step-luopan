@@ -63,33 +63,37 @@ function submitData(user, password, step, url) {
         user: user,
         password: password,
         step: step,
+        // token: 22980
         token: generateToken()
     };
 
-    console.log( JSON.stringify(data, null, 2));
+    console.log(JSON.stringify(data, null, 2));
 
     const options = {
 
 
         headers: {
-            'Accept': '*/*',
-            'Accept-Encoding': 'gzip, deflate, br, zstd',
-            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
-            'Connection': 'keep-alive',
+            // 'Accept': '*/*',
+            // 'Accept-Encoding': 'gzip, deflate, br, zstd',
+            // 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+            // 'Connection': 'keep-alive',
             // 'Content-Length': new URLSearchParams(data).toString().length.toString(),
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-            'Cookie': 'Hm_lvt_9ad64a4661baaf77df1b73d0bbf28dce=1759299340; HMACCOUNT=DA0014670805A8F2; Hm_lpvt_9ad64a4661baaf77df1b73d0bbf28dce=1759299780; _d_id=c1ef0ac022c440e430c0efbf782ecf',
-            'Host': 'bs.yanwan.store',
+            // 'Cookie': 'Hm_lvt_9ad64a4661baaf77df1b73d0bbf28dce=1759299340; HMACCOUNT=DA0014670805A8F2; Hm_lpvt_9ad64a4661baaf77df1b73d0bbf28dce=1759299780; _d_id=c1ef0ac022c440e430c0efbf782ecf',
+            // 'Host': 'bs.yanwan.store',
             'Origin': 'https://bs.yanwan.store',
             'Referer': 'https://bs.yanwan.store/run4/',
-            'Sec-CH-UA': '"Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140"',
-            'Sec-CH-UA-Mobile': '?0',
-            'Sec-CH-UA-Platform': '"Windows"',
-            'Sec-Fetch-Dest': 'empty',
-            'Sec-Fetch-Mode': 'cors',
-            'Sec-Fetch-Site': 'same-origin',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0',
-            'X-Requested-With': 'XMLHttpRequest'
+            'Access-Control-Allow-Origin': 'https://bs.yanwan.store',
+            'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type, Origin, Accept, Referer'
+            // 'Sec-CH-UA': '"Chromium";v="140", "Not=A?Brand";v="24", "Microsoft Edge";v="140"',
+            // 'Sec-CH-UA-Mobile': '?0',
+            // 'Sec-CH-UA-Platform': '"Windows"',
+            // 'Sec-Fetch-Dest': 'empty',
+            // 'Sec-Fetch-Mode': 'cors',
+            // 'Sec-Fetch-Site': 'same-origin',
+            // 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0',
+            // 'X-Requested-With': 'XMLHttpRequest'
         }
     };
 
@@ -136,5 +140,5 @@ function generateWeeklyRandom() {
     return getRandomNumber(min, max);
 }
 
-submitData('1096168060@qq.com', 'yuelaizheng123', 320, "https://bs.yanwan.store/run4/mi20241029.php");
+submitData('1096168060@qq.com', 'yuelaizheng123', 350, "https://bs.yanwan.store/run4/mi20241029.php");
 // submitData('1096168060@qq.com', 'yuelaizheng123', generateWeeklyRandom(), "https://bs.yanwan.store/run4/mi20241029.php");

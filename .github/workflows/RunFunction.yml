@@ -1,10 +1,10 @@
 name: 修改微信步数
 
 on:
-#  workflow_dispatch:
+  workflow_dispatch:
   schedule:
 #    - cron: '0 12 * * *'
-    - cron: '20 8 * * *'
+    - cron: '32 8 * * *'
 
 jobs:
   ChangBuShu:

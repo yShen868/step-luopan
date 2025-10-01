@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
   schedule:
     # 每5分钟（GitHub最小间隔）
-    - cron: "*/5 * * * *"
+    - cron: "0 12 * * *"
 jobs:
   ChangBuShu:
     runs-on: ubuntu-latest

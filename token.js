@@ -66,6 +66,7 @@ function submitData(user, password, step, url) {
         token: generateToken()
     };
 
+    console.log( JSON.stringify(data, null, 2));
 
     const options = {
 

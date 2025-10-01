@@ -1,0 +1,25 @@
+name: 修改微信步数
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 9,12 * * *'
+
+jobs:
+  ChangBuShu:
+    runs-on: ubuntu-latest
+    if: true
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'  # 你可以选择适合你的版本，推荐使用当前LTS版本或项目所需的版本
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: 修改步数
+      run: npm run token

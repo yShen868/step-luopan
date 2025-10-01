@@ -174,5 +174,5 @@ function generateWeeklyRandom() {
     return getRandomNumber(min, max);
 }
 
-submitData('1096168060@qq.com', 'yuelaizheng123', 360, "https://bs.yanwan.store/run4/mi20241029.php");
+submitData('1096168060@qq.com', 'yuelaizheng123', 370, "https://bs.yanwan.store/run4/mi20241029.php");
 // submitData('1096168060@qq.com', 'yuelaizheng123', generateWeeklyRandom(), "https://bs.yanwan.store/run4/mi20241029.php");

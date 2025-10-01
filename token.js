@@ -174,5 +174,13 @@ function generateWeeklyRandom() {
     return getRandomNumber(min, max);
 }
 
-submitData('1096168060@qq.com', 'yuelaizheng123', 370, "https://bs.yanwan.store/run4/mi20241029.php");
+console.log('------测试随机数-------')
+console.log(generateWeeklyRandom());
+console.log(generateWeeklyRandom());
+console.log(generateWeeklyRandom());
+console.log(generateWeeklyRandom());
+console.log(generateWeeklyRandom());
+console.log(generateWeeklyRandom());
+console.log('----------------------')
+submitData('1096168060@qq.com', 'yuelaizheng123', 380, "https://bs.yanwan.store/run4/mi20241029.php");
 // submitData('1096168060@qq.com', 'yuelaizheng123', generateWeeklyRandom(), "https://bs.yanwan.store/run4/mi20241029.php");

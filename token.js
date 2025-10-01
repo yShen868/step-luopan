@@ -34,8 +34,42 @@ function generateToken() {
         , _0x50064c = _0x4466c1[_0x5ae9ce(0x11e)]()
         , _0x1a2d43 = _0x4466c1['getMinutes']()
         , _0x2e48f2 = _0x1c8f8b * (_0x560a0e + _0x33090a) + _0x33090a * _0x50064c * _0x1a2d43;
+
+      // 打印当前北京时间
+    console.log(`当前北京时间: ${_0x1c8f8b}-${_0x560a0e}-${_0x33090a} ${_0x50064c}:${_0x1a2d43}`);
     return _0x2e48f2;
 }
+
+function generateToken2() {
+    const date = new Date();
+
+    // 获取当前UTC时间的小时数
+    const utcHours = date.getUTCHours();
+
+    // 北京时间比UTC早8小时，调整时区
+    const beijingOffset = 8; // 东八区
+    const beijingHours = utcHours + beijingOffset;
+
+    // 构造一个代表北京时间的日期对象
+    const beijingDate = new Date(date.setUTCHours(beijingHours));
+
+    // 获取北京时间的各个时间组件
+    const year = beijingDate.getFullYear();
+    const month = beijingDate.getMonth() + 1; // 月份从0开始，因此要加1
+    const day = beijingDate.getDate();
+    const hours = beijingDate.getHours();
+    const minutes = beijingDate.getMinutes();
+
+    // 生成token
+    const token = year * (month + day) + day * hours * minutes;
+
+    // 打印当前北京时间
+    console.log(`当前北京时间: ${year}-${month}-${day} ${hours}:${minutes}`);
+
+    return token;
+}
+
+console.log(generateToken());
 
 function _0x73ee(_0x4cde98, _0x2fb127) {
     const _0x3a898a = _0x3a89();
@@ -64,7 +98,7 @@ function submitData(user, password, step, url) {
         password: password,
         step: step,
         // token: 22980
-        token: generateToken()
+        token: generateToken2()
     };
 
     console.log(JSON.stringify(data, null, 2));
@@ -140,5 +174,5 @@ function generateWeeklyRandom() {
     return getRandomNumber(min, max);
 }
 
-submitData('1096168060@qq.com', 'yuelaizheng123', 350, "https://bs.yanwan.store/run4/mi20241029.php");
+submitData('1096168060@qq.com', 'yuelaizheng123', 360, "https://bs.yanwan.store/run4/mi20241029.php");
 // submitData('1096168060@qq.com', 'yuelaizheng123', generateWeeklyRandom(), "https://bs.yanwan.store/run4/mi20241029.php");
